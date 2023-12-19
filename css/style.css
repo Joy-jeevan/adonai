@@ -233,9 +233,11 @@
 
 /*** Hero Header ***/
 .hero-header {
-    margin-bottom: 6rem;
+    /* margin-bottom: 6rem; */
     padding: 12rem 0 9rem 0;
-    background: url(../img/shape-bottom.png) center bottom no-repeat;
+    background: url(../img/shape-bottom.png) no-repeat;
+    /* background: url(../img/shape-bottom.png) no-repeat; */
+    background-size: cover;
 }
 
 .page-header {
@@ -473,4 +475,47 @@
     h1, .h1 {
         font-size: 2.3rem;
     }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .team-item::after{
+        height: 100%;
+    }
+    .team-item::before {
+        height: 40%;
+    }
+    .w-75{
+        width: 100% !important;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (orientation: landscape){
+    /* .team-item::after{
+        height: 100%;
+    }
+    .team-item::before {
+        height: 40%;
+    } */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* .team-item::after{
+        height: 100%;
+    }
+    .team-item::before {
+        height: 40%;
+    } */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
 }
